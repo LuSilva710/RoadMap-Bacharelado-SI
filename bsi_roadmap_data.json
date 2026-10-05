@@ -1,0 +1,1118 @@
+{
+ "meta": {
+  "curso": "Bacharelado em Sistemas de Informação (BSI)",
+  "instituicao": "IFMG - Campus Ouro Branco",
+  "cargaHorariaTotalMinima": 3004,
+  "cargaObrigatoriasListadas": 2208,
+  "turno": "Noturno",
+  "duracao": "4 anos (8 períodos)",
+  "vagas": "50 por ano",
+  "fonte": "Ementário BSI (IFMG Ouro Branco, nov/2019): https://www.ifmg.edu.br/ourobranco/nossos-cursos/graduacao-6/Ementario_BSI_2020.pdf",
+  "fonteCurso": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/graduacao-6/sistemas-de-informacao",
+  "observacoes": "Pré-requisitos são dependências sugeridas (o ementário não os lista). Relação disciplina-carreira é orientativa. Optativas listadas: as do ementário até Inglês para Negócios I, mais Redes II (PPC 2017); confirme o restante no PPC."
+ },
+ "areas": [
+  {
+   "id": "dev",
+   "nome": "Desenvolvimento de Software & Algoritmos",
+   "descricao": "Lógica de programação, estruturas de dados, orientação a objetos, web e mobile."
+  },
+  {
+   "id": "eng_sw",
+   "nome": "Engenharia de Software & Qualidade",
+   "descricao": "Como planejar, projetar, testar e garantir a qualidade de sistemas, incluindo usabilidade (IHC)."
+  },
+  {
+   "id": "infra",
+   "nome": "Infraestrutura, Redes & Sistemas Operacionais",
+   "descricao": "Como o computador funciona por dentro, sistemas operacionais, redes e sistemas distribuídos."
+  },
+  {
+   "id": "dados",
+   "nome": "Dados & Inteligência de Negócios",
+   "descricao": "Bancos de dados, apoio à decisão e inteligência artificial."
+  },
+  {
+   "id": "gestao",
+   "nome": "Gestão, Governança & Negócios",
+   "descricao": "Administração, contabilidade, governança de TI, projetos e empreendedorismo."
+  },
+  {
+   "id": "fundamentos",
+   "nome": "Fundamentos, Matemática & Formação Geral",
+   "descricao": "Matemática, estatística, ética, comunicação e método científico."
+  }
+ ],
+ "carreiras": [
+  {
+   "id": "fullstack",
+   "nome": "Desenvolvedor Full-Stack / Software Engineer",
+   "tagline": "Cria aplicações completas, do visual ao servidor.",
+   "descricao": "Constrói interfaces e APIs para web e mobile.",
+   "cor": "#48a848"
+  },
+  {
+   "id": "data_scientist",
+   "nome": "Cientista / Analista de Dados",
+   "tagline": "Transforma dados em decisões.",
+   "descricao": "Bancos de dados, estatística e IA para achar padrões e montar painéis.",
+   "cor": "#3868c8"
+  },
+  {
+   "id": "devops_infra",
+   "nome": "Infraestrutura, Redes e DevOps",
+   "tagline": "Mantém redes, servidores e nuvem funcionando.",
+   "descricao": "Cuida da infraestrutura, automação e comunicação entre sistemas.",
+   "cor": "#d83838"
+  },
+  {
+   "id": "seguranca",
+   "nome": "Segurança da Informação",
+   "tagline": "Protege dados e sistemas.",
+   "descricao": "Une redes, sistemas operacionais, governança e legislação para reduzir riscos.",
+   "cor": "#f85858"
+  },
+  {
+   "id": "ux_ui",
+   "nome": "UX/UI e Product Designer",
+   "tagline": "Projeta a experiência do usuário.",
+   "descricao": "Design centrado no ser humano, protótipos e acessibilidade.",
+   "cor": "#a070e0"
+  },
+  {
+   "id": "qa",
+   "nome": "Qualidade e Testes (QA)",
+   "tagline": "Garante que o software funcione bem.",
+   "descricao": "Testes, métricas e processos de qualidade.",
+   "cor": "#38b8b8"
+  },
+  {
+   "id": "game_dev",
+   "nome": "Jogos e Computação Gráfica",
+   "tagline": "Cria jogos, simulações e gráficos.",
+   "descricao": "Programação, matemática e computação gráfica.",
+   "cor": "#68d868"
+  },
+  {
+   "id": "project_manager",
+   "nome": "Gerente de Projetos / Scrum Master",
+   "tagline": "Lidera equipes e entregas.",
+   "descricao": "Conecta clientes e times, cuidando de prazo, custo e valor.",
+   "cor": "#7848b8"
+  },
+  {
+   "id": "it_consultant",
+   "nome": "Consultor de TI e Negócios Digitais",
+   "tagline": "Alinha a TI aos objetivos da empresa.",
+   "descricao": "Processos, governança, sistemas gerenciais e consultoria.",
+   "cor": "#d8a830"
+  },
+  {
+   "id": "empreendedor",
+   "nome": "Empreendedor / Startups",
+   "tagline": "Cria o próprio negócio de tecnologia.",
+   "descricao": "Une visão de negócio, finanças, inovação e produto.",
+   "cor": "#f8d830"
+  },
+  {
+   "id": "ai_engineer",
+   "nome": "Engenharia e Pesquisa em IA",
+   "tagline": "Desenvolve modelos inteligentes.",
+   "descricao": "Machine Learning e redes neurais, com forte base matemática.",
+   "cor": "#58a0e8"
+  },
+  {
+   "id": "pesquisador",
+   "nome": "Pesquisador / Docente",
+   "tagline": "Segue para mestrado e pesquisa.",
+   "descricao": "Método científico, TCC e artigos, base para pós-graduação.",
+   "cor": "#b09060"
+  }
+ ],
+ "disciplinas": [
+  {
+   "id": "ip",
+   "nome": "Introdução à Programação",
+   "cargaHoraria": 64,
+   "chTeorica": 32,
+   "chPratica": 32,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.085",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Seu primeiro contato com programação: algoritmos, variáveis, condições, laços e funções.",
+   "periodo": 1,
+   "carreiras": [
+    "fullstack",
+    "data_scientist",
+    "devops_infra",
+    "ai_engineer"
+   ]
+  },
+  {
+   "id": "etica",
+   "nome": "Ética e Legislação",
+   "cargaHoraria": 32,
+   "chTeorica": 32,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.044",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Ética profissional, LGPD, Marco Civil da Internet, direitos autorais e crimes digitais.",
+   "periodo": 1,
+   "carreiras": [
+    "seguranca",
+    "it_consultant"
+   ]
+  },
+  {
+   "id": "adm1",
+   "nome": "Princípios da Administração I",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.011",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Como as empresas se organizam, planejam e são lideradas, e o papel da tecnologia nos negócios.",
+   "periodo": 1,
+   "carreiras": [
+    "project_manager",
+    "it_consultant",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "isi",
+   "nome": "Introdução a Sistemas de Informação",
+   "cargaHoraria": 64,
+   "chTeorica": 32,
+   "chPratica": 32,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.001",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Visão geral da computação: hardware, software, sistemas de numeração, lógica, redes e sistemas de informação.",
+   "periodo": 1,
+   "carreiras": [
+    "project_manager",
+    "it_consultant",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "port",
+   "nome": "Português Instrumental I",
+   "cargaHoraria": 32,
+   "chTeorica": 32,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.007",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Leitura e escrita de textos técnicos e acadêmicos.",
+   "periodo": 1,
+   "carreiras": [
+    "ux_ui",
+    "project_manager"
+   ]
+  },
+  {
+   "id": "pcalc",
+   "nome": "Pré-Cálculo",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.101",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Funções e gráficos: a preparação para o Cálculo.",
+   "periodo": 1,
+   "carreiras": [
+    "data_scientist",
+    "ai_engineer"
+   ]
+  },
+  {
+   "id": "aed1",
+   "nome": "Algoritmos e Estrutura de Dados I",
+   "cargaHoraria": 64,
+   "chTeorica": 30,
+   "chPratica": 34,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.009",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "ip"
+   ],
+   "descricaoDidatica": "Listas, pilhas, filas, busca e ordenação para criar programas eficientes.",
+   "periodo": 2,
+   "carreiras": [
+    "fullstack",
+    "data_scientist",
+    "ai_engineer"
+   ]
+  },
+  {
+   "id": "calc",
+   "nome": "Cálculo Diferencial e Integral",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.012",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "pcalc"
+   ],
+   "descricaoDidatica": "Limites, derivadas e integrais.",
+   "periodo": 2,
+   "carreiras": [
+    "data_scientist",
+    "ai_engineer"
+   ]
+  },
+  {
+   "id": "ing1",
+   "nome": "Inglês Instrumental I",
+   "cargaHoraria": 32,
+   "chTeorica": 32,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.003",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Leitura de textos técnicos em inglês.",
+   "periodo": 2,
+   "carreiras": [
+    "fullstack",
+    "devops_infra",
+    "seguranca",
+    "qa",
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "mpesq",
+   "nome": "Métodos e Técnicas de Pesquisa",
+   "cargaHoraria": 32,
+   "chTeorica": 32,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.002",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Método científico, ABNT e como escrever projeto e artigo.",
+   "periodo": 2,
+   "carreiras": [
+    "data_scientist",
+    "project_manager",
+    "ai_engineer",
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "poo1",
+   "nome": "Programação Orientada a Objetos I",
+   "cargaHoraria": 64,
+   "chTeorica": 30,
+   "chPratica": 34,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.010",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "ip"
+   ],
+   "descricaoDidatica": "Classes, objetos, herança e polimorfismo (em Java).",
+   "periodo": 2,
+   "carreiras": [
+    "fullstack",
+    "qa",
+    "game_dev"
+   ]
+  },
+  {
+   "id": "sd",
+   "nome": "Sistemas Digitais e Circuitos Combinacionais",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "infra",
+   "codigo": "OBBGSIN.013",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Circuitos lógicos e a base eletrônica dos computadores.",
+   "periodo": 2,
+   "carreiras": [
+    "devops_infra"
+   ]
+  },
+  {
+   "id": "aed2",
+   "nome": "Algoritmos e Estrutura de Dados II",
+   "cargaHoraria": 64,
+   "chTeorica": 34,
+   "chPratica": 30,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.015",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "aed1"
+   ],
+   "descricaoDidatica": "Árvores, grafos e algoritmos avançados de busca.",
+   "periodo": 3,
+   "carreiras": [
+    "fullstack",
+    "data_scientist",
+    "game_dev",
+    "ai_engineer"
+   ]
+  },
+  {
+   "id": "bd1",
+   "nome": "Banco de Dados I",
+   "cargaHoraria": 64,
+   "chTeorica": 34,
+   "chPratica": 30,
+   "areaId": "dados",
+   "codigo": "OBBGSIN.016",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "ip"
+   ],
+   "descricaoDidatica": "Modelagem relacional e SQL.",
+   "periodo": 3,
+   "carreiras": [
+    "fullstack",
+    "data_scientist",
+    "it_consultant"
+   ]
+  },
+  {
+   "id": "contab",
+   "nome": "Contabilidade",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.018",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "adm1"
+   ],
+   "descricaoDidatica": "Balanço, fluxo de caixa e demonstrações financeiras.",
+   "periodo": 3,
+   "carreiras": [
+    "project_manager",
+    "it_consultant",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "arq",
+   "nome": "Arquitetura e Organização de Computadores",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "infra",
+   "codigo": "OBBGSIN.024",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "sd"
+   ],
+   "descricaoDidatica": "Como a CPU, a memória e os barramentos funcionam.",
+   "periodo": 3,
+   "carreiras": [
+    "devops_infra",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "es1",
+   "nome": "Engenharia de Software I",
+   "cargaHoraria": 64,
+   "chTeorica": 34,
+   "chPratica": 30,
+   "areaId": "eng_sw",
+   "codigo": "OBBGSIN.017",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "isi",
+    "poo1"
+   ],
+   "descricaoDidatica": "Requisitos, UML, métodos ágeis e testes.",
+   "periodo": 3,
+   "carreiras": [
+    "fullstack",
+    "ux_ui",
+    "qa",
+    "project_manager"
+   ]
+  },
+  {
+   "id": "alg",
+   "nome": "Álgebra Linear e Geometria Analítica",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.021",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "calc"
+   ],
+   "descricaoDidatica": "Vetores e matrizes, base de gráficos 3D e aprendizado de máquina.",
+   "periodo": 4,
+   "carreiras": [
+    "data_scientist",
+    "game_dev",
+    "ai_engineer"
+   ]
+  },
+  {
+   "id": "poo2",
+   "nome": "Programação Orientada a Objetos II",
+   "cargaHoraria": 64,
+   "chTeorica": 30,
+   "chPratica": 34,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.022",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "poo1"
+   ],
+   "descricaoDidatica": "Interface gráfica, threads, persistência e padrões de projeto.",
+   "periodo": 4,
+   "carreiras": [
+    "fullstack",
+    "game_dev"
+   ]
+  },
+  {
+   "id": "md",
+   "nome": "Matemática Discreta",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.020",
+   "tipo": "obrigatoria",
+   "prerequisitos": [],
+   "descricaoDidatica": "Lógica, conjuntos e teoria dos grafos.",
+   "periodo": 4,
+   "carreiras": [
+    "data_scientist",
+    "game_dev",
+    "ai_engineer",
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "so",
+   "nome": "Sistemas Operacionais",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "infra",
+   "codigo": "OBBGSIN.030",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "arq"
+   ],
+   "descricaoDidatica": "Processos, memória, arquivos e escalonamento.",
+   "periodo": 4,
+   "carreiras": [
+    "fullstack",
+    "devops_infra",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "web",
+   "nome": "Programação Web",
+   "cargaHoraria": 64,
+   "chTeorica": 20,
+   "chPratica": 44,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.023",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "poo1",
+    "aed1"
+   ],
+   "descricaoDidatica": "Sites e sistemas web dinâmicos com HTML, CSS e JavaScript.",
+   "periodo": 4,
+   "carreiras": [
+    "fullstack",
+    "ux_ui",
+    "qa"
+   ]
+  },
+  {
+   "id": "es2",
+   "nome": "Engenharia de Software II",
+   "cargaHoraria": 64,
+   "chTeorica": 34,
+   "chPratica": 30,
+   "areaId": "eng_sw",
+   "codigo": "OBBGSIN.041",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "es1"
+   ],
+   "descricaoDidatica": "Arquitetura, DevOps, REST/GraphQL e reuso de software.",
+   "periodo": 5,
+   "carreiras": [
+    "fullstack",
+    "devops_infra",
+    "qa",
+    "project_manager"
+   ]
+  },
+  {
+   "id": "pe",
+   "nome": "Probabilidade e Estatística",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.031",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "calc"
+   ],
+   "descricaoDidatica": "Análise de dados, probabilidade e testes de hipóteses.",
+   "periodo": 5,
+   "carreiras": [
+    "data_scientist",
+    "ai_engineer",
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "redes1",
+   "nome": "Redes de Computadores I",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "infra",
+   "codigo": "OBBGSIN.029",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "so"
+   ],
+   "descricaoDidatica": "Modelo OSI e TCP/IP, endereçamento, roteamento e sockets.",
+   "periodo": 5,
+   "carreiras": [
+    "fullstack",
+    "devops_infra",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "gov",
+   "nome": "Governança e Gestão da Informação",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.019",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "adm1",
+    "es1"
+   ],
+   "descricaoDidatica": "Governança de TI, gestão da informação e do conhecimento.",
+   "periodo": 5,
+   "carreiras": [
+    "devops_infra",
+    "seguranca",
+    "project_manager",
+    "it_consultant"
+   ]
+  },
+  {
+   "id": "paa",
+   "nome": "Projeto e Análise de Algoritmos",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.038",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "aed2",
+    "md"
+   ],
+   "descricaoDidatica": "Complexidade, programação dinâmica e problemas NP-completos.",
+   "periodo": 6,
+   "carreiras": [
+    "fullstack",
+    "data_scientist",
+    "ai_engineer",
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "mob",
+   "nome": "Programação para Dispositivos Móveis",
+   "cargaHoraria": 64,
+   "chTeorica": 34,
+   "chPratica": 30,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.039",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "web",
+    "poo2"
+   ],
+   "descricaoDidatica": "Aplicativos para smartphones e tablets.",
+   "periodo": 6,
+   "carreiras": [
+    "fullstack",
+    "ux_ui"
+   ]
+  },
+  {
+   "id": "sad",
+   "nome": "Sistemas de Apoio à Decisão",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "dados",
+   "codigo": "OBBGSIN.036",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "bd1",
+    "gov"
+   ],
+   "descricaoDidatica": "Sistemas gerenciais, ERP e apoio à decisão nas empresas.",
+   "periodo": 6,
+   "carreiras": [
+    "data_scientist",
+    "it_consultant"
+   ]
+  },
+  {
+   "id": "sdist",
+   "nome": "Sistemas Distribuídos",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "infra",
+   "codigo": "OBBGSIN.037",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "redes1"
+   ],
+   "descricaoDidatica": "Sistemas em rede, tolerância a falhas e segurança.",
+   "periodo": 6,
+   "carreiras": [
+    "devops_infra",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "ihc",
+   "nome": "Interface Humano Computador",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "eng_sw",
+   "codigo": "OBBGSIN.026",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "es1"
+   ],
+   "descricaoDidatica": "Usabilidade, protótipos, design centrado no usuário e acessibilidade.",
+   "periodo": 7,
+   "carreiras": [
+    "fullstack",
+    "ux_ui"
+   ]
+  },
+  {
+   "id": "gp",
+   "nome": "Gestão de Projetos",
+   "cargaHoraria": 32,
+   "chTeorica": 20,
+   "chPratica": 12,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.040",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "gov"
+   ],
+   "descricaoDidatica": "Escopo, prazo, custo, qualidade e riscos de projetos.",
+   "periodo": 7,
+   "carreiras": [
+    "project_manager",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "ia",
+   "nome": "Inteligência Artificial",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "dados",
+   "codigo": "OBBGSIN.034",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "paa",
+    "pe"
+   ],
+   "descricaoDidatica": "Busca, aprendizado de máquina e redes neurais.",
+   "periodo": 7,
+   "carreiras": [
+    "data_scientist",
+    "game_dev",
+    "ai_engineer",
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "tcc1",
+   "nome": "Trabalho de Conclusão de Curso I",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.091",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "mpesq",
+    "es1"
+   ],
+   "descricaoDidatica": "Projeto do TCC com orientação de professor.",
+   "periodo": 7,
+   "carreiras": [
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "emp",
+   "nome": "Empreendedorismo",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.102",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "gp"
+   ],
+   "descricaoDidatica": "Plano de negócios e criação de empresas de tecnologia.",
+   "periodo": 8,
+   "carreiras": [
+    "project_manager",
+    "it_consultant",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "qual",
+   "nome": "Qualidade de Software",
+   "cargaHoraria": 64,
+   "chTeorica": 44,
+   "chPratica": 20,
+   "areaId": "eng_sw",
+   "codigo": "OBBGSIN.103",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "es2"
+   ],
+   "descricaoDidatica": "Métricas, modelos de qualidade e teste de software.",
+   "periodo": 8,
+   "carreiras": [
+    "qa"
+   ]
+  },
+  {
+   "id": "tcc2",
+   "nome": "Trabalho de Conclusão de Curso II",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.092",
+   "tipo": "obrigatoria",
+   "prerequisitos": [
+    "tcc1"
+   ],
+   "descricaoDidatica": "Conclusão do TCC (artigo ou monografia) e apresentação.",
+   "periodo": 8,
+   "carreiras": [
+    "pesquisador"
+   ]
+  }
+ ],
+ "optativasEspecificas": [
+  {
+   "id": "bd2",
+   "nome": "Banco de Dados II",
+   "cargaHoraria": 64,
+   "chTeorica": 34,
+   "chPratica": 30,
+   "areaId": "dados",
+   "codigo": "OBBGSIN.033",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "bd1"
+   ],
+   "descricaoDidatica": "Armazenamento em disco, consultas e estruturas avançadas.",
+   "carreiras": [
+    "fullstack",
+    "data_scientist"
+   ]
+  },
+  {
+   "id": "redes2",
+   "nome": "Redes de Computadores II",
+   "cargaHoraria": 64,
+   "chTeorica": 34,
+   "chPratica": 30,
+   "areaId": "infra",
+   "codigo": "PPC 2017",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "redes1"
+   ],
+   "descricaoDidatica": "Aprofundamento em redes (conforme PPC 2017).",
+   "carreiras": [
+    "devops_infra",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "cg",
+   "nome": "Computação Gráfica",
+   "cargaHoraria": 64,
+   "chTeorica": 32,
+   "chPratica": 32,
+   "areaId": "dev",
+   "codigo": "OBBGSIN.070",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "alg",
+    "poo1"
+   ],
+   "descricaoDidatica": "Gráficos 2D/3D, animação e jogos.",
+   "carreiras": [
+    "ux_ui",
+    "game_dev"
+   ]
+  },
+  {
+   "id": "cn",
+   "nome": "Cálculo Numérico",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.079",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "calc"
+   ],
+   "descricaoDidatica": "Métodos numéricos e erros de aritmética computacional.",
+   "carreiras": [
+    "data_scientist",
+    "game_dev",
+    "ai_engineer",
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "gpsw",
+   "nome": "Gerência de Projetos de Software",
+   "cargaHoraria": 64,
+   "chTeorica": 32,
+   "chPratica": 32,
+   "areaId": "eng_sw",
+   "codigo": "OBBGSIN.049",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "es1"
+   ],
+   "descricaoDidatica": "Estimativas, riscos e gestão ágil de projetos de software.",
+   "carreiras": [
+    "project_manager"
+   ]
+  },
+  {
+   "id": "afin",
+   "nome": "Administração Financeira I",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.035",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Mercado financeiro, capital de giro e avaliação de ações.",
+   "carreiras": [
+    "it_consultant",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "aemp",
+   "nome": "Avaliação de Empresas",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.057",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Como calcular o valor de empresas e projetos.",
+   "carreiras": [
+    "it_consultant"
+   ]
+  },
+  {
+   "id": "comport",
+   "nome": "Comportamento Organizacional",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.025",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Liderança, motivação, conflito e cultura nas organizações.",
+   "carreiras": [
+    "project_manager"
+   ]
+  },
+  {
+   "id": "consult",
+   "nome": "Consultoria Empresarial",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.081",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "gov"
+   ],
+   "descricaoDidatica": "Diagnóstico organizacional e serviços de consultoria.",
+   "carreiras": [
+    "it_consultant"
+   ]
+  },
+  {
+   "id": "gamb",
+   "nome": "Gestão Ambiental",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.055",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Gestão ambiental nas empresas (ISO, PDCA).",
+   "carreiras": []
+  },
+  {
+   "id": "ginov",
+   "nome": "Gestão da Inovação",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.054",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "adm1"
+   ],
+   "descricaoDidatica": "Criatividade e inovação como vantagem competitiva.",
+   "carreiras": [
+    "it_consultant",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "grh",
+   "nome": "Gestão de Recursos Humanos",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.094",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Recrutamento, treinamento e avaliação de pessoas.",
+   "carreiras": [
+    "project_manager"
+   ]
+  },
+  {
+   "id": "gserv",
+   "nome": "Gestão de Serviços",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.060",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Serviços, marketing de serviços e atendimento ao cliente.",
+   "carreiras": [
+    "it_consultant",
+    "empreendedor"
+   ]
+  },
+  {
+   "id": "gcon",
+   "nome": "Gestão do Conhecimento",
+   "cargaHoraria": 64,
+   "chTeorica": 64,
+   "chPratica": 0,
+   "areaId": "gestao",
+   "codigo": "OBBGSIN.059",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Aprendizagem organizacional e gestão por competências.",
+   "carreiras": [
+    "it_consultant"
+   ]
+  },
+  {
+   "id": "ing2",
+   "nome": "Inglês Instrumental II",
+   "cargaHoraria": 32,
+   "chTeorica": 32,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.006",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [
+    "ing1"
+   ],
+   "descricaoDidatica": "Escrita de textos técnicos em inglês.",
+   "carreiras": [
+    "pesquisador"
+   ]
+  },
+  {
+   "id": "ingn",
+   "nome": "Inglês para Negócios I",
+   "cargaHoraria": 32,
+   "chTeorica": 32,
+   "chPratica": 0,
+   "areaId": "fundamentos",
+   "codigo": "OBBGSIN.083",
+   "tipo": "optativa_especifica",
+   "prerequisitos": [],
+   "descricaoDidatica": "Inglês prático para o ambiente de trabalho.",
+   "carreiras": []
+  }
+ ]
+}

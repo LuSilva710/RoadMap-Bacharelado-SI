@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: "Press Start 2P", cursive;
+  --font-vt: "VT323", monospace;
+  --color-hyrule-dark: #0c1117;
+  --color-hyrule-panel: #141e2a;
+  --color-hyrule-card: #1a2836;
+  --color-zelda-green: #48a848;
+  --color-zelda-green-dark: #2d7a2d;
+  --color-zelda-green-light: #68d868;
+  --color-zelda-gold: #d8a830;
+  --color-zelda-gold-light: #f8d830;
+  --color-zelda-gold-dim: #a07820;
+  --color-zelda-red: #d83838;
+  --color-zelda-red-light: #f85858;
+  --color-zelda-blue: #3868c8;
+  --color-zelda-blue-light: #58a0e8;
+  --color-zelda-purple: #7848b8;
+  --color-zelda-purple-light: #a070e0;
+  --color-zelda-brown: #886840;
+  --color-zelda-brown-light: #b09060;
+  --color-zelda-cyan: #38b8b8;
+  --color-scroll: #e8d8a8;
+  --color-parchment: #f0e8d0;
+}
+
+:root {
+  --bg-dungeon: #0c1117;
+  --bg-panel: #141e2a;
+  --bg-card: #1a2836;
+  --zelda-green: #48a848;
+  --zelda-green-dark: #2d7a2d;
+  --zelda-gold: #d8a830;
+  --zelda-gold-dim: #a07820;
+  --zelda-brown: #886840;
+  --text-scroll: #e8d8a8;
+  --text-dim: #888068;
+  --text-white: #f0e8d0;
+}
+
+*, *::before, *::after { image-rendering: pixelated; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "VT323", monospace;
+  background-color: var(--bg-dungeon);
+  color: var(--text-scroll);
+  overflow-x: hidden;
+  font-size: 19px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  background-image:
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    radial-gradient(circle at 25% 25%, #388848 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, #286838 1px, transparent 1px),
+    linear-gradient(180deg, #0a1810 0%, var(--bg-dungeon) 30%, #0a1018 100%);
+  background-size: 16px 16px, 16px 16px, 16px 16px, 16px 16px, 100% 100%;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.45) 100%);
+}
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--bg-dungeon); }
+::-webkit-scrollbar-thumb { background: var(--zelda-green-dark); border: 2px solid var(--bg-dungeon); }
+::-webkit-scrollbar-thumb:hover { background: var(--zelda-green); }
+
+/* ---------- HUD ---------- */
+.game-hud {
+  background: linear-gradient(180deg, #1a2836 0%, #101820 100%);
+  border-bottom: 4px solid var(--zelda-gold-dim);
+  box-shadow: 0 4px 0 #000, inset 0 -2px 0 rgba(216,168,48,0.15);
+}
+.hud-stat {
+  display: flex; align-items: center; gap: 6px; padding: 5px 10px;
+  background: var(--bg-card); border: 2px solid #2a3a4a;
+  box-shadow: inset -1px -1px 0 #101820, inset 1px 1px 0 #243040;
+}
+.hud-stat-label { font-family: "Press Start 2P", cursive; font-size: 6px; color: var(--text-dim); margin-bottom: 4px; }
+.hud-stat-value { font-family: "Press Start 2P", cursive; font-size: 9px; }
+
+/* ---------- Panels ---------- */
+.rpg-panel {
+  position: relative;
+  background: var(--bg-panel);
+  border: 4px solid var(--zelda-gold-dim);
+  box-shadow: inset 0 0 0 2px #000, inset 0 0 0 6px var(--bg-panel), inset 0 0 0 8px rgba(216,168,48,0.2), 0 0 0 2px #000, 4px 4px 0 rgba(0,0,0,0.5);
+}
+.rpg-panel::before, .rpg-panel::after {
+  content: ""; position: absolute; width: 8px; height: 8px; background: var(--zelda-gold); z-index: 2;
+}
+.rpg-panel::before { top: -2px; left: -2px; }
+.rpg-panel::after { bottom: -2px; right: -2px; }
+.rpg-panel-green { border-color: var(--zelda-green-dark); }
+.rpg-panel-green::before, .rpg-panel-green::after { background: var(--zelda-green); }
+
+.rpg-dialog {
+  position: relative; background: var(--bg-panel); border: 4px solid #fff;
+  box-shadow: inset 0 0 0 4px var(--bg-dungeon), inset 0 0 0 6px var(--zelda-gold-dim), 0 0 0 2px #000, 6px 6px 0 rgba(0,0,0,0.4);
+  padding: 20px 24px;
+}
+
+/* ---------- Buttons / inputs ---------- */
+.pixel-btn {
+  font-family: "Press Start 2P", cursive; font-size: 9px; background-color: var(--bg-card); color: var(--text-scroll);
+  border: 3px solid #3a4a5a; box-shadow: inset -2px -2px 0 #101820, inset 2px 2px 0 #2a3a4a, 0 2px 0 #000;
+  padding: 8px 14px; cursor: pointer; text-transform: uppercase; white-space: nowrap;
+}
+.pixel-btn:hover { background-color: var(--zelda-gold-dim); color: #fff; border-color: var(--zelda-gold); }
+.pixel-btn:active { transform: translate(2px, 2px); }
+.pixel-btn.active { background-color: var(--zelda-green-dark); color: #68d868; border-color: var(--zelda-green); }
+
+.map-controls {
+  background: rgba(12,17,23,0.85); border: 2px solid var(--zelda-gold-dim); padding: 2px; box-shadow: 2px 2px 0 #000;
+}
+
+.inventory-panel {
+  background: var(--bg-dungeon); border: 3px solid var(--zelda-brown);
+  box-shadow: inset 0 0 0 2px #000, inset 0 0 20px rgba(0,0,0,0.5); padding: 14px;
+}
+.inventory-slot {
+  font-family: "Press Start 2P", cursive; font-size: 7px; background: var(--bg-card); color: var(--text-scroll);
+  border: 3px solid #3a4a5a; box-shadow: inset -2px -2px 0 #0a1018, inset 2px 2px 0 #2a3a4a, 0 0 0 1px #000;
+  padding: 10px 12px; cursor: pointer; text-transform: uppercase; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0;
+}
+.inventory-slot:hover { border-color: var(--zelda-gold); background: #243040; color: #fff; transform: translateY(-2px); }
+.inventory-slot.active {
+  background: linear-gradient(180deg, #2d5a2d 0%, #1a401a 100%); border-color: #68d868; color: #68d868;
+  box-shadow: inset -2px -2px 0 #0a2810, inset 2px 2px 0 #3a7a3a, 0 0 0 2px var(--zelda-green);
+}
+
+.quest-log-input, .quest-select {
+  background: var(--bg-dungeon); border: 3px solid var(--zelda-brown); box-shadow: inset 2px 2px 0 #000;
+  color: var(--text-scroll); font-family: "VT323", monospace;
+}
+.quest-log-input:focus, .quest-select:focus { border-color: var(--zelda-gold); outline: none; }
+
+/* ---------- Map ---------- */
+.map-screen {
+  position: relative;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 8px, rgba(56,104,200,0.03) 8px, rgba(56,104,200,0.03) 9px),
+    repeating-linear-gradient(90deg, transparent, transparent 8px, rgba(56,104,200,0.03) 8px, rgba(56,104,200,0.03) 9px),
+    linear-gradient(180deg, #0a1420 0%, #101828 50%, #0a1420 100%);
+  border: 6px solid var(--zelda-brown);
+  box-shadow: inset 0 0 0 3px var(--zelda-gold-dim), inset 0 0 0 6px #000, 0 0 0 3px #000, 8px 8px 0 rgba(0,0,0,0.6);
+}
+.map-screen-label {
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: var(--bg-dungeon);
+  border: 2px solid var(--zelda-gold-dim); border-top: none; padding: 4px 16px; font-family: "Press Start 2P", cursive;
+  font-size: 6px; color: var(--zelda-gold); z-index: 10; white-space: nowrap;
+}
+.map-legend {
+  background: rgba(12,17,23,0.92); border: 3px solid var(--zelda-brown); box-shadow: inset 0 0 0 2px #000;
+}
+
+.subj-node {
+  position: absolute; background: linear-gradient(180deg, #1a2836 0%, #141e28 100%);
+  border: 3px solid #2a3a4a; box-shadow: inset -2px -2px 0 #101820, inset 2px 2px 0 #243040, 0 0 0 2px #000;
+  padding: 4px 8px 4px 12px; cursor: pointer; overflow: hidden; text-align: left;
+  transition: opacity .15s, filter .15s, transform .1s;
+}
+.subj-node:hover { border-color: var(--zelda-gold); transform: translate(-1px, -1px); z-index: 5; }
+.subj-node.selected { border-color: var(--zelda-gold-light); box-shadow: 0 0 0 2px #000, 0 0 0 5px rgba(248,216,48,.35); z-index: 6; }
+.subj-node.dimmed { opacity: 0.18; filter: grayscale(0.9) brightness(0.6); }
+.subj-node.glow { border-color: var(--zelda-gold-light); }
+
+.pixel-card {
+  background: linear-gradient(180deg, #1a2836 0%, #141e28 100%); border: 3px solid #2a3a4a;
+  box-shadow: inset -2px -2px 0 #101820, inset 2px 2px 0 #243040, 0 0 0 2px #000, 3px 3px 0 rgba(0,0,0,0.4);
+  cursor: pointer; padding: 10px 12px 10px 16px; position: relative; text-align: left; width: 100%;
+}
+.pixel-card:hover { border-color: var(--zelda-gold); transform: translate(-2px, -2px); }
+.pixel-card.dimmed { opacity: 0.2; filter: grayscale(0.9) brightness(0.6); }
+.pixel-card.highlighted { border-color: var(--zelda-gold-light); }
+
+.dungeon-header {
+  background: linear-gradient(180deg, #1a3040 0%, #101820 100%); border: 3px solid var(--zelda-green-dark);
+  box-shadow: inset 0 0 0 2px #000, 0 2px 0 #000; padding: 10px 12px;
+}
+.dungeon-header.optional { border-color: var(--zelda-cyan); background: linear-gradient(180deg, #183838 0%, #101820 100%); }
+.dungeon-header.final { border-color: var(--zelda-red); background: linear-gradient(180deg, #401818 0%, #201010 100%); }
+
+.pixel-badge {
+  font-family: "Press Start 2P", cursive; font-size: 7px; padding: 4px 8px; border: 2px solid;
+  display: inline-flex; align-items: center; gap: 6px; text-transform: uppercase;
+}
+
+.region-tag {
+  font-family: "Press Start 2P", cursive; font-size: 6px; padding: 6px 8px; border: 2px solid;
+  background: rgba(0,0,0,0.3); cursor: pointer; display: inline-flex; align-items: center; gap: 4px;
+}
+.region-tag:hover { filter: brightness(1.3); }
+.region-tag.active { background: rgba(255,255,255,0.14); box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+
+/* ---------- Drawer ---------- */
+.drawer-section {
+  background: var(--bg-card); border: 3px solid #2a3a4a;
+  box-shadow: inset -2px -2px 0 #101820, inset 2px 2px 0 #243040; padding: 14px;
+}
+.drawer-section-title {
+  font-family: "Press Start 2P", cursive; font-size: 7px; margin-bottom: 10px; padding-bottom: 8px;
+  border-bottom: 2px dashed rgba(216,168,48,0.25);
+}
+
+.scanlines::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.07) 2px, rgba(0,0,0,0.07) 4px);
+}
+
+@keyframes blink-step { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+.blink { animation: blink-step 1s step-end infinite; }
+
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+.sprite-bob { animation: bob 1.6s steps(4, end) infinite; }
+
+@keyframes pop-in { from { transform: scale(.96); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.pop-in { animation: pop-in .18s steps(3, end); }
+
+/* =====================================================
+   FICHA DE PERSONAGEM (character sheet) — estilo RPG de mesa
+   ===================================================== */
+.sheet {
+  --ink: #2b241a;
+  position: relative;
+  background: linear-gradient(180deg, #cfc7b4 0%, #c3baa4 100%);
+  border: 5px solid #e0912a;
+  box-shadow: 0 0 0 3px #1a1208, inset 0 0 0 3px #3a2a14, 8px 8px 0 rgba(0,0,0,.55);
+  padding: 16px;
+  color: var(--ink);
+  font-family: "VT323", monospace;
+}
+.sheet-box {
+  background: #d9d1be;
+  border: 3px solid #4a4236;
+  box-shadow: inset 2px 2px 0 #efe9da, inset -2px -2px 0 #a59c86;
+}
+.sheet-label {
+  display: inline-block; background: #b8b09a; border: 3px solid #4a4236;
+  box-shadow: inset 2px 2px 0 #d8d0bd, inset -2px -2px 0 #8d856f;
+  font-family: "Press Start 2P", cursive; font-size: 8px; padding: 6px 10px; color: var(--ink); width: 100%;
+}
+.sheet-head { font-size: 22px; line-height: 1.1; }
+.sheet-head b { font-weight: 400; color: #5a4d38; margin-right: 4px; }
+.sheet-head span.v { color: var(--ink); text-shadow: 1px 1px 0 #efe9da; }
+
+.shield-stat {
+  position: relative; width: 72px; text-align: center; padding: 4px 0 16px;
+  background: #d9d1be; border: 3px solid #4a4236;
+  box-shadow: inset 2px 2px 0 #efe9da, inset -2px -2px 0 #a59c86;
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%);
+}
+.shield-stat .abbr { font-family: "Press Start 2P", cursive; font-size: 8px; }
+.shield-stat .mod { font-size: 26px; line-height: 1; margin-top: 2px; }
+.shield-stat .score { font-size: 20px; line-height: 1; }
+
+.skill-row {
+  display: flex; align-items: center; gap: 6px; width: 100%; text-align: left; padding: 1px 6px;
+  font-size: 21px; line-height: 1.15; cursor: pointer; border: 2px solid transparent; color: var(--ink);
+}
+.skill-row:hover, .skill-row.focused { background: #b8ad8f; border-color: #4a4236; }
+.skill-row .dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #4a4236; flex-shrink: 0; background: transparent; }
+.skill-row .dot.core { background: #2b241a; }
+.skill-row .bonus { min-width: 34px; font-weight: 700; }
+.skill-row .sname { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.skill-row .area-chip { width: 8px; height: 14px; flex-shrink: 0; border: 1px solid #2b241a; }
+
+.sprite-stage {
+  background: #bfb7a2; border: 3px solid #4a4236; box-shadow: inset 2px 2px 0 #d8d0bd, inset -2px -2px 0 #8d856f;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 92% 100%, 0 100%);
+}
+.sprite-stage img,
+.sprite-stage svg { image-rendering: pixelated; max-width: 100%; max-height: 100%; width: 100%; height: 100%; object-fit: cover; }
+.sprite-stage img { mix-blend-mode: multiply; }
+.sprite-stage svg { mix-blend-mode: normal; }
+
+.equip-row { display: flex; align-items: center; gap: 8px; font-size: 21px; line-height: 1.05; padding: 3px 4px; }
+.equip-icon { width: 28px; height: 28px; background: #8d856f; border: 2px solid #4a4236; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+
+.sheet-scroll { scrollbar-width: thin; scrollbar-color: #4a4236 #b8b09a; }
+.sheet-scroll::-webkit-scrollbar { width: 10px; }
+.sheet-scroll::-webkit-scrollbar-track { background: #b8b09a; }
+.sheet-scroll::-webkit-scrollbar-thumb { background: #4a4236; border: 2px solid #b8b09a; }
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .pixel-btn { font-size: 7px; padding: 6px 10px; }
+  .shield-stat { width: 58px; }
+}
