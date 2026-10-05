@@ -67,7 +67,21 @@ Para gerar os arquivos otimizados para produção, execute na raiz do projeto:
 npm run build
 ```
 
-O código compilado será gerado dentro da pasta `dist/`. Esse conteúdo pode ser publicado em servidores web, GitHub Pages, Vercel, Netlify, etc.
+O código compilado será gerado dentro da pasta `dist/`.
+
+---
+
+## 🌐 Publicação no GitHub Pages (Automático via GitHub Actions)
+
+O repositório já está configurado com um fluxo automatizado do **GitHub Actions** (`.github/workflows/deploy.yml`) para compilar e publicar o projeto no GitHub Pages a cada push na branch `main`.
+
+Para ativar:
+1. No seu repositório no GitHub, clique em **Settings** (Configurações).
+2. No menu lateral esquerdo, vá em **Pages**.
+3. Na seção **Build and deployment** > **Source**, selecione:
+   👉 **GitHub Actions** (em vez de *Deploy from a branch*).
+4. O GitHub executará automaticamente o workflow de build e deploy! Em 1-2 minutos o site estará online em:
+   **`https://LuSilva710.github.io/RoadMap-Bacharelado-SI/`**
 
 ---
 
